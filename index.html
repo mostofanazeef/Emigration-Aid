@@ -175,6 +175,56 @@
   }
   </script>
 
+  <!-- FAQ JSON-LD Structured Data (GEO Optimization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What services does Emigration Aid offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Emigration Aid is a premium immigration and study abroad consultancy based in Dhaka. We offer end-to-end services including student recruitment & placement, skilled immigration pathways, personalized career counseling, visa application filing, pre-departure briefings, and post-arrival assistance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which countries can I study or migrate to through Emigration Aid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We support university placements and immigration pathways for 20+ destination countries. Our primary focus areas include Australia, New Zealand, Canada, the United Kingdom, the United States, Germany, France, Finland, Sweden, Hungary, Malta, and various other European nations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long has Emigration Aid been operating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Emigration Aid (legally Jamal Associates & Emigration Aid) was founded in September 2009 by Khan Abu Rawshan Md Mostofa Jamal. We have over 17 years of experience in immigration consulting and have successfully guided more than 500 students and professionals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is the Emigration Aid office located in Dhaka?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our headquarters is located at Suite A4, Toma Angelica, 280/1-281/1 North Shahjahanpur, Dhaka 1217, Bangladesh. We are open Saturday through Thursday from 9:00 AM to 6:00 PM, and closed on Fridays."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I book a consultation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can book a free, no-obligation session by filling out our online consultation form directly on this website, messaging our counseling team on WhatsApp (+8801769048022), or calling our office directly."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- GA4 (replace GA_MEASUREMENT_ID) — deferred for performance -->
   <script async defer src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
   <script>
@@ -697,6 +747,7 @@
     .menu-link:nth-child(4) { transition-delay: 250ms; }
     .menu-link:nth-child(5) { transition-delay: 300ms; }
     .menu-link:nth-child(6) { transition-delay: 350ms; }
+    .menu-link:nth-child(7) { transition-delay: 400ms; }
 
     /* ── Staggered Service Card Delays (replaces inline styles) ── */
     #services .grid > .animate-fade-up:nth-child(1) { animation-delay: 0.1s; }
@@ -753,6 +804,7 @@
       <a class="nav-desktop-link text-base font-normal text-on-surface-variant hover:text-primary transition-colors tracking-wide relative py-2" href="#services">Services</a>
       <a class="nav-desktop-link text-base font-normal text-on-surface-variant hover:text-primary transition-colors tracking-wide relative py-2" href="#destinations">Destinations</a>
       <a class="nav-desktop-link text-base font-normal text-on-surface-variant hover:text-primary transition-colors tracking-wide relative py-2" href="#about">About Us</a>
+      <a class="nav-desktop-link text-base font-normal text-on-surface-variant hover:text-primary transition-colors tracking-wide relative py-2" href="#faq">FAQ</a>
       <a class="nav-desktop-link text-base font-normal text-on-surface-variant hover:text-primary transition-colors tracking-wide relative py-2" href="#contact">Contact</a>
     </div>
 
@@ -779,6 +831,7 @@
     <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#services">Services</a>
     <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#destinations">Destinations</a>
     <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#about">About Us</a>
+    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#faq">FAQ</a>
     <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#contact">Contact</a>
     <a class="menu-link sm:hidden mt-8 inline-flex items-center justify-center rounded-2xl w-full border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-0.5 py-2.5 px-5 font-normal text-lg tracking-wide shadow-sm" href="#contact">
       Book Free Consultation
@@ -861,22 +914,22 @@
         <div class="grid grid-cols-2 gap-8 md:gap-12 flex-1 w-full lg:w-auto">
           <!-- Stat 1 -->
           <div>
-            <h3 class="text-5xl md:text-7xl font-black text-on-surface stat-number tracking-tighter leading-none mb-2" data-target="17" data-suffix="+">0+</h3>
+            <h3 class="text-5xl md:text-7xl font-black text-on-surface stat-number tracking-tighter leading-none mb-2" data-target="17" data-suffix="+">17+</h3>
             <p class="text-xs md:text-sm text-brand-green font-semibold uppercase tracking-[0.15em]">Years of Excellence</p>
           </div>
           <!-- Stat 2 -->
           <div>
-            <h3 class="text-5xl md:text-7xl font-black text-on-surface stat-number tracking-tighter leading-none mb-2" data-target="500" data-suffix="+">0+</h3>
+            <h3 class="text-5xl md:text-7xl font-black text-on-surface stat-number tracking-tighter leading-none mb-2" data-target="500" data-suffix="+">500+</h3>
             <p class="text-xs md:text-sm text-primary font-semibold uppercase tracking-[0.15em]">Students Placed</p>
           </div>
           <!-- Stat 3 -->
           <div>
-            <h3 class="text-5xl md:text-7xl font-black text-on-surface stat-number tracking-tighter leading-none mb-2" data-target="20" data-suffix="+">0+</h3>
+            <h3 class="text-5xl md:text-7xl font-black text-on-surface stat-number tracking-tighter leading-none mb-2" data-target="20" data-suffix="+">20+</h3>
             <p class="text-xs md:text-sm text-amber-500 font-semibold uppercase tracking-[0.15em]">Destinations</p>
           </div>
           <!-- Stat 4 -->
           <div>
-            <h3 class="text-5xl md:text-7xl font-black text-on-surface stat-number tracking-tighter leading-none mb-2" data-target="14" data-suffix="">0</h3>
+            <h3 class="text-5xl md:text-7xl font-black text-on-surface stat-number tracking-tighter leading-none mb-2" data-target="14" data-suffix="">14</h3>
             <p class="text-xs md:text-sm text-emerald-500 font-semibold uppercase tracking-[0.15em]">Expert Team</p>
           </div>
         </div>
@@ -1803,6 +1856,98 @@
   </div>
 </section>
 
+<!-- ── FAQ SECTION (GEO OPTIMIZATION) ────────────────────────── -->
+<section class="relative py-20 md:py-28 overflow-hidden animate-fade-up" id="faq">
+  <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="w-6 h-[1px] bg-primary/30"></span>
+          <span class="text-primary text-[0.7rem] md:text-xs uppercase tracking-[0.25em] font-semibold">FAQ</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-light tracking-tight text-on-surface leading-tight select-none">
+          Frequently Asked <span class="font-bold text-primary block mt-1">Questions.</span>
+        </h2>
+      </div>
+      <div class="max-w-md md:mb-1 shrink-0">
+        <p class="text-on-surface-variant text-sm md:text-base leading-relaxed font-normal">
+          Clear answers to common questions about studying, working, or migrating abroad with Emigration Aid.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ Accordion Container -->
+    <div class="max-w-4xl mx-auto flex flex-col gap-4">
+
+      <!-- FAQ Item 1 -->
+      <details class="group rounded-2xl border border-outline-variant/10 bg-surface/40 backdrop-blur-md p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer focus:outline-none list-none">
+          <h3 class="text-base md:text-lg font-bold text-on-surface tracking-tight pr-4">What services does Emigration Aid offer?</h3>
+          <span class="shrink-0 rounded-full bg-surface-container-high p-1 text-on-surface-variant group-open:-rotate-180 transition-transform duration-300">
+            <span class="material-symbols-outlined text-xl block">expand_more</span>
+          </span>
+        </summary>
+        <div class="mt-4 leading-relaxed text-on-surface-variant text-sm md:text-base font-normal">
+          Emigration Aid is a premium immigration and study abroad consultancy based in Dhaka. We offer end-to-end services including student recruitment & placement, skilled immigration pathways, personalized career counseling, visa application filing, pre-departure briefings, and post-arrival assistance.
+        </div>
+      </details>
+
+      <!-- FAQ Item 2 -->
+      <details class="group rounded-2xl border border-outline-variant/10 bg-surface/40 backdrop-blur-md p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer focus:outline-none list-none">
+          <h3 class="text-base md:text-lg font-bold text-on-surface tracking-tight pr-4">Which countries can I study or migrate to through Emigration Aid?</h3>
+          <span class="shrink-0 rounded-full bg-surface-container-high p-1 text-on-surface-variant group-open:-rotate-180 transition-transform duration-300">
+            <span class="material-symbols-outlined text-xl block">expand_more</span>
+          </span>
+        </summary>
+        <div class="mt-4 leading-relaxed text-on-surface-variant text-sm md:text-base font-normal">
+          We support university placements and immigration pathways for 20+ destination countries. Our primary focus areas include Australia, New Zealand, Canada, the United Kingdom, the United States, Germany, France, Finland, Sweden, Hungary, Malta, and various other European nations.
+        </div>
+      </details>
+
+      <!-- FAQ Item 3 -->
+      <details class="group rounded-2xl border border-outline-variant/10 bg-surface/40 backdrop-blur-md p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer focus:outline-none list-none">
+          <h3 class="text-base md:text-lg font-bold text-on-surface tracking-tight pr-4">How long has Emigration Aid been operating?</h3>
+          <span class="shrink-0 rounded-full bg-surface-container-high p-1 text-on-surface-variant group-open:-rotate-180 transition-transform duration-300">
+            <span class="material-symbols-outlined text-xl block">expand_more</span>
+          </span>
+        </summary>
+        <div class="mt-4 leading-relaxed text-on-surface-variant text-sm md:text-base font-normal">
+          Emigration Aid (legally Jamal Associates & Emigration Aid) was founded in September 2009 by Khan Abu Rawshan Md Mostofa Jamal. We have over 17 years of experience in immigration consulting and have successfully guided more than 500 students and professionals.
+        </div>
+      </details>
+
+      <!-- FAQ Item 4 -->
+      <details class="group rounded-2xl border border-outline-variant/10 bg-surface/40 backdrop-blur-md p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer focus:outline-none list-none">
+          <h3 class="text-base md:text-lg font-bold text-on-surface tracking-tight pr-4">Where is the Emigration Aid office located in Dhaka?</h3>
+          <span class="shrink-0 rounded-full bg-surface-container-high p-1 text-on-surface-variant group-open:-rotate-180 transition-transform duration-300">
+            <span class="material-symbols-outlined text-xl block">expand_more</span>
+          </span>
+        </summary>
+        <div class="mt-4 leading-relaxed text-on-surface-variant text-sm md:text-base font-normal">
+          Our headquarters is located at Suite A4, Toma Angelica, 280/1-281/1 North Shahjahanpur, Dhaka 1217, Bangladesh. We are open Saturday through Thursday from 9:00 AM to 6:00 PM, and closed on Fridays.
+        </div>
+      </details>
+
+      <!-- FAQ Item 5 -->
+      <details class="group rounded-2xl border border-outline-variant/10 bg-surface/40 backdrop-blur-md p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer focus:outline-none list-none">
+          <h3 class="text-base md:text-lg font-bold text-on-surface tracking-tight pr-4">How can I book a consultation?</h3>
+          <span class="shrink-0 rounded-full bg-surface-container-high p-1 text-on-surface-variant group-open:-rotate-180 transition-transform duration-300">
+            <span class="material-symbols-outlined text-xl block">expand_more</span>
+          </span>
+        </summary>
+        <div class="mt-4 leading-relaxed text-on-surface-variant text-sm md:text-base font-normal">
+          You can book a free, no-obligation session by filling out our online consultation form directly on this website, messaging our counseling team on WhatsApp (+8801769048022), or calling our office directly.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
 <!-- ── CONTACT ──────── -->
 <section class="relative py-20 md:py-28 overflow-hidden" id="contact">
 
@@ -2062,7 +2207,11 @@
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const target = parseInt(entry.target.dataset.target, 10);
-        if (!isNaN(target)) animateCounter(entry.target, target);
+        if (!isNaN(target)) {
+          const suffix = entry.target.dataset.suffix || '';
+          entry.target.textContent = "0" + suffix;
+          animateCounter(entry.target, target);
+        }
         obs.unobserve(entry.target);
       }
     });

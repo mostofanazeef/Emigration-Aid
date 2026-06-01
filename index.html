@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html class="scroll-smooth dark" lang="en" style="width: 100%; overflow-x: hidden; position: relative;">
+<html class="scroll-smooth dark" lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emigration Aid — Top Visa & Education Consultancy in Dhaka</title>
   <link rel="icon" type="image/png" href="logo.png"/>
   <link rel="apple-touch-icon" href="logo.png"/>
-  <meta name="description" content="Expert guidance for studying abroad or migrating to Australia, Canada, UK & more. 17+ years, 10000+ students, 20+ destinations. Book a free consultation in Dhaka."/>
+  <meta name="description" content="Expert guidance for studying abroad or migrating to Australia, Canada, UK & more. 17+ years, 10,000+ students, 20+ destinations. Free consultation in Dhaka."/>
   <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://www.emigrationaid.com/index.html"/>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+  <link rel="canonical" href="https://www.emigrationaid.com/"/>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Emigration Aid — Top Visa & Education Consultancy in Dhaka"/>
-  <meta property="og:description" content="Expert guidance for studying abroad or migrating to Australia, Canada, UK & more. 17+ years, 1000+ students, 20+ destinations."/>
+  <meta property="og:description" content="Expert guidance for studying abroad or migrating to Australia, Canada, UK & more. 17+ years, 10,000+ students, 20+ destinations. Free consultation in Dhaka."/>
   <meta property="og:image" content="assets/images/og-image.jpg"/>
-  <meta property="og:url" content="https://www.emigrationaid.com/index.html"/>
+  <meta property="og:url" content="https://www.emigrationaid.com/"/>
   <meta property="og:site_name" content="Emigration Aid"/>
 
   <!-- Twitter Card -->
@@ -184,6 +185,22 @@
   </script>
 
   <style>
+    /* ── Local Font Loading ─────────────────────────────────── */
+    @font-face {
+      font-family: 'Google Sans Flex';
+      src: url('Google_Sans/GoogleSans-VariableFont_GRAD,opsz,wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Google Sans Flex';
+      src: url('Google_Sans/GoogleSans-Italic-VariableFont_GRAD,opsz,wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: italic;
+      font-display: swap;
+    }
+
     /* ── Spotlight Overlay ──────────────────────────────────── */
     .spotlight-overlay {
       pointer-events: none;
@@ -297,95 +314,30 @@
       filter: drop-shadow(0 15px 30px rgba(0,0,0,0.4));
     }
 
-    .flag-anim-0, .flag-anim-1, .flag-anim-2, .flag-anim-3, .flag-anim-4,
-    .flag-anim-5, .flag-anim-6, .flag-anim-7, .flag-anim-8, .flag-anim-9,
-    .flag-anim-10, .flag-anim-11 {
-      position: absolute; inset: 0;
-      display: flex; align-items: center; justify-content: center;
+    .hero-flag {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 2rem;
       will-change: transform, opacity;
       opacity: 0;
-      transform: translateX(100%);
+      transform: translate3d(100%, 0, 0);
+      transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.8s ease;
     }
     @media (min-width: 768px) {
-      .flag-anim-0, .flag-anim-1, .flag-anim-2, .flag-anim-3, .flag-anim-4,
-      .flag-anim-5, .flag-anim-6, .flag-anim-7, .flag-anim-8, .flag-anim-9,
-      .flag-anim-10, .flag-anim-11 {
+      .hero-flag {
         padding: 3rem;
       }
     }
-
-    .flag-anim-0 { animation: flagSlide0 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide0 {
-      0%, 5.56%          { transform: translateX(0); opacity: 1; }
-      8.33%, 97.22%      { transform: translateX(-100%); opacity: 0; }
-      97.5%, 100%        { transform: translateX(100%); opacity: 0; }
+    .hero-flag.active {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
-    .flag-anim-1 { animation: flagSlide1 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide1 {
-      0%, 5.56%          { transform: translateX(100%); opacity: 0; }
-      8.33%, 13.89%      { transform: translateX(0); opacity: 1; }
-      16.67%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-2 { animation: flagSlide2 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide2 {
-      0%, 13.89%         { transform: translateX(100%); opacity: 0; }
-      16.67%, 22.22%     { transform: translateX(0); opacity: 1; }
-      25.00%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-3 { animation: flagSlide3 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide3 {
-      0%, 22.22%         { transform: translateX(100%); opacity: 0; }
-      25.00%, 30.56%     { transform: translateX(0); opacity: 1; }
-      33.33%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-4 { animation: flagSlide4 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide4 {
-      0%, 30.56%         { transform: translateX(100%); opacity: 0; }
-      33.33%, 38.89%     { transform: translateX(0); opacity: 1; }
-      41.67%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-5 { animation: flagSlide5 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide5 {
-      0%, 38.89%         { transform: translateX(100%); opacity: 0; }
-      41.67%, 47.22%     { transform: translateX(0); opacity: 1; }
-      50.00%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-6 { animation: flagSlide6 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide6 {
-      0%, 47.22%         { transform: translateX(100%); opacity: 0; }
-      50.00%, 55.56%     { transform: translateX(0); opacity: 1; }
-      58.33%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-7 { animation: flagSlide7 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide7 {
-      0%, 55.56%         { transform: translateX(100%); opacity: 0; }
-      58.33%, 63.89%     { transform: translateX(0); opacity: 1; }
-      66.67%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-8 { animation: flagSlide8 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide8 {
-      0%, 63.89%         { transform: translateX(100%); opacity: 0; }
-      66.67%, 72.22%     { transform: translateX(0); opacity: 1; }
-      75.00%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-9 { animation: flagSlide9 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide9 {
-      0%, 72.22%         { transform: translateX(100%); opacity: 0; }
-      75.00%, 80.56%     { transform: translateX(0); opacity: 1; }
-      83.33%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-10 { animation: flagSlide10 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide10 {
-      0%, 80.56%         { transform: translateX(100%); opacity: 0; }
-      83.33%, 88.89%     { transform: translateX(0); opacity: 1; }
-      91.67%, 100%       { transform: translateX(-100%); opacity: 0; }
-    }
-    .flag-anim-11 { animation: flagSlide11 36s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite; }
-    @keyframes flagSlide11 {
-      0%, 88.89%         { transform: translateX(100%); opacity: 0; }
-      91.67%, 97.22%     { transform: translateX(0); opacity: 1; }
-      100%               { transform: translateX(-100%); opacity: 0; }
+    .hero-flag.outgoing {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
     }
 
     /* ── Mesh Gradient ──────────────────────────────────────── */
@@ -572,19 +524,17 @@
       width: 100%;
       -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
       mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+      cursor: grab;
+      user-select: none;
+    }
+    .testimonial-marquee-outer.active {
+      cursor: grabbing;
     }
     .testimonial-marquee-track {
       display: flex;
       width: max-content;
-      animation: testimonialMarqueeScroll 55s linear infinite;
       will-change: transform;
-    }
-    .testimonial-marquee-outer:hover .testimonial-marquee-track {
-      animation-play-state: paused;
-    }
-    @keyframes testimonialMarqueeScroll {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+      transform: translate3d(0, 0, 0);
     }
     .testimonial-card {
       width: 320px;
@@ -739,10 +689,46 @@
       left: 0;
       background-color: #abc7ff;
     }
+
+    /* ── Staggered Menu Link Delays (replaces inline styles) ─── */
+    .menu-link:nth-child(1) { transition-delay: 100ms; }
+    .menu-link:nth-child(2) { transition-delay: 150ms; }
+    .menu-link:nth-child(3) { transition-delay: 200ms; }
+    .menu-link:nth-child(4) { transition-delay: 250ms; }
+    .menu-link:nth-child(5) { transition-delay: 300ms; }
+    .menu-link:nth-child(6) { transition-delay: 350ms; }
+
+    /* ── Staggered Service Card Delays (replaces inline styles) ── */
+    #services .grid > .animate-fade-up:nth-child(1) { animation-delay: 0.1s; }
+    #services .grid > .animate-fade-up:nth-child(2) { animation-delay: 0.2s; }
+    #services .grid > .animate-fade-up:nth-child(3) { animation-delay: 0.3s; }
+    #services .grid > .animate-fade-up:nth-child(4) { animation-delay: 0.4s; }
+    #services .grid > .animate-fade-up:nth-child(5) { animation-delay: 0.5s; }
+
+    /* ── Staggered Destination Flag Float Delays (replaces inline styles) ── */
+    .dest-pill:nth-child(1) img  { animation-delay: 0s; }
+    .dest-pill:nth-child(2) img  { animation-delay: 0.5s; }
+    .dest-pill:nth-child(3) img  { animation-delay: 1.0s; }
+    .dest-pill:nth-child(4) img  { animation-delay: 1.5s; }
+    .dest-pill:nth-child(5) img  { animation-delay: 2.0s; }
+    .dest-pill:nth-child(6) img  { animation-delay: 2.5s; }
+    .dest-pill:nth-child(7) img  { animation-delay: 3.0s; }
+    .dest-pill:nth-child(8) img  { animation-delay: 3.5s; }
+    .dest-pill:nth-child(9) img  { animation-delay: 4.0s; }
+    .dest-pill:nth-child(10) img { animation-delay: 4.5s; }
+    .dest-pill:nth-child(11) img { animation-delay: 5.0s; }
+    .dest-pill:nth-child(12) img { animation-delay: 5.5s; }
+
+    /* ── Contact Form/Office Card Delays ────────────────────── */
+    #contact .lg\:col-span-7.animate-fade-up { animation-delay: 0.1s; }
+    #contact .lg\:col-span-5.animate-fade-up { animation-delay: 0.2s; }
+
+    /* ── About Section Right Column Delay ──────────────────── */
+    #about .lg\:col-span-7.animate-fade-up { animation-delay: 0.2s; }
   </style>
 </head>
 
-<body class="bg-gradient-to-b from-surface-container-lowest via-surface to-surface-container text-on-surface font-sans overflow-x-hidden antialiased">
+<body class="bg-surface-container-lowest text-on-surface font-sans overflow-x-hidden antialiased">
 
 <!-- Skip to Main Content -->
 <a href="#main-content" class="skip-link gradient-journey text-white">Skip to main content</a>
@@ -789,12 +775,12 @@
     <span class="material-symbols-outlined text-4xl md:text-5xl">close</span>
   </button>
   <div class="flex flex-col gap-6 md:gap-10 text-center">
-    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#home" style="transition-delay: 100ms;">Home</a>
-    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#services" style="transition-delay: 150ms;">Services</a>
-    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#destinations" style="transition-delay: 200ms;">Destinations</a>
-    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#about" style="transition-delay: 250ms;">About Us</a>
-    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#contact" style="transition-delay: 300ms;">Contact</a>
-    <a class="menu-link sm:hidden mt-8 inline-flex items-center justify-center rounded-2xl w-full border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-0.5 py-2.5 px-5 font-normal text-lg tracking-wide shadow-sm" href="#contact" style="transition-delay: 350ms;">
+    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#home">Home</a>
+    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#services">Services</a>
+    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#destinations">Destinations</a>
+    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#about">About Us</a>
+    <a class="menu-link text-4xl md:text-6xl font-normal text-on-surface hover:text-primary transition-colors tracking-tight" href="#contact">Contact</a>
+    <a class="menu-link sm:hidden mt-8 inline-flex items-center justify-center rounded-2xl w-full border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-0.5 py-2.5 px-5 font-normal text-lg tracking-wide shadow-sm" href="#contact">
       Book Free Consultation
     </a>
   </div>
@@ -840,18 +826,18 @@
 
       <div class="animate-fade-up is-visible w-full">
         <div class="flag-wrapper relative h-64 md:h-[500px] w-full max-w-2xl mx-auto lg:mx-0 overflow-hidden rounded-3xl flex items-center justify-center">
-          <div class="flag-anim-0"><img alt="Australia" class="w-full h-full object-contain" src="Australia.svg"/></div>
-          <div class="flag-anim-1"><img alt="New Zealand" class="w-full h-full object-contain" src="New Zealand.svg"/></div>
-          <div class="flag-anim-2"><img alt="Canada" class="w-full h-full object-contain" src="Canada.svg"/></div>
-          <div class="flag-anim-3"><img alt="UK" class="w-full h-full object-contain" src="UK.svg"/></div>
-          <div class="flag-anim-4"><img alt="USA" class="w-full h-full object-contain" src="USA.svg"/></div>
-          <div class="flag-anim-5"><img alt="Hungary" class="w-full h-full object-contain" src="Hungary.svg"/></div>
-          <div class="flag-anim-6"><img alt="France" class="w-full h-full object-contain" src="France.svg"/></div>
-          <div class="flag-anim-7"><img alt="Germany" class="w-full h-full object-contain" src="Germany.svg"/></div>
-          <div class="flag-anim-8"><img alt="Finland" class="w-full h-full object-contain" src="Finland.svg"/></div>
-          <div class="flag-anim-9"><img alt="Sweden" class="w-full h-full object-contain" src="Sweden.svg"/></div>
-          <div class="flag-anim-10"><img alt="Malta" class="w-full h-full object-contain" src="Malta.svg"/></div>
-          <div class="flag-anim-11"><img alt="Europe" class="w-full h-full object-contain" src="Europe.svg"/></div>
+          <div class="hero-flag active"><img alt="Australia" class="w-full h-full object-contain" src="Australia.svg"/></div>
+          <div class="hero-flag"><img alt="New Zealand" class="w-full h-full object-contain" src="New Zealand.svg"/></div>
+          <div class="hero-flag"><img alt="Canada" class="w-full h-full object-contain" src="Canada.svg"/></div>
+          <div class="hero-flag"><img alt="UK" class="w-full h-full object-contain" src="UK.svg"/></div>
+          <div class="hero-flag"><img alt="USA" class="w-full h-full object-contain" src="USA.svg"/></div>
+          <div class="hero-flag"><img alt="Hungary" class="w-full h-full object-contain" src="Hungary.svg"/></div>
+          <div class="hero-flag"><img alt="France" class="w-full h-full object-contain" src="France.svg"/></div>
+          <div class="hero-flag"><img alt="Germany" class="w-full h-full object-contain" src="Germany.svg"/></div>
+          <div class="hero-flag"><img alt="Finland" class="w-full h-full object-contain" src="Finland.svg"/></div>
+          <div class="hero-flag"><img alt="Sweden" class="w-full h-full object-contain" src="Sweden.svg"/></div>
+          <div class="hero-flag"><img alt="Malta" class="w-full h-full object-contain" src="Malta.svg"/></div>
+          <div class="hero-flag"><img alt="Europe" class="w-full h-full object-contain" src="Europe.svg"/></div>
         </div>
       </div>
     </div>
@@ -957,101 +943,101 @@
       <div class="marquee-track gap-6 md:gap-10">
         <!-- Destinations List Set 1 -->
         <a href="destinations.html#australia" class="dest-pill group">
-          <img src="Australia.svg" alt="Australia" style="animation-delay: 0s;"/>
+          <img src="Australia.svg" alt="Australia"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Australia</span>
         </a>
         <a href="destinations.html#new-zealand" class="dest-pill group">
-          <img src="New Zealand.svg" alt="New Zealand" style="animation-delay: 0.5s;"/>
+          <img src="New Zealand.svg" alt="New Zealand"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">New Zealand</span>
         </a>
         <a href="destinations.html#canada" class="dest-pill group">
-          <img src="Canada.svg" alt="Canada" style="animation-delay: 1.0s;"/>
+          <img src="Canada.svg" alt="Canada"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Canada</span>
         </a>
         <a href="destinations.html#uk" class="dest-pill group">
-          <img src="UK.svg" alt="United Kingdom" style="animation-delay: 1.5s;"/>
+          <img src="UK.svg" alt="United Kingdom"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">United Kingdom</span>
         </a>
         <a href="destinations.html#usa" class="dest-pill group">
-          <img src="USA.svg" alt="United States" style="animation-delay: 2.0s;"/>
+          <img src="USA.svg" alt="United States"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">United States</span>
         </a>
         <a href="destinations.html#hungary" class="dest-pill group">
-          <img src="Hungary.svg" alt="Hungary" style="animation-delay: 2.5s;"/>
+          <img src="Hungary.svg" alt="Hungary"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Hungary</span>
         </a>
         <a href="destinations.html#france" class="dest-pill group">
-          <img src="France.svg" alt="France" style="animation-delay: 3.0s;"/>
+          <img src="France.svg" alt="France"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">France</span>
         </a>
         <a href="destinations.html#germany" class="dest-pill group">
-          <img src="Germany.svg" alt="Germany" style="animation-delay: 3.5s;"/>
+          <img src="Germany.svg" alt="Germany"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Germany</span>
         </a>
         <a href="destinations.html#finland" class="dest-pill group">
-          <img src="Finland.svg" alt="Finland" style="animation-delay: 4.0s;"/>
+          <img src="Finland.svg" alt="Finland"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Finland</span>
         </a>
         <a href="destinations.html#sweden" class="dest-pill group">
-          <img src="Sweden.svg" alt="Sweden" style="animation-delay: 4.5s;"/>
+          <img src="Sweden.svg" alt="Sweden"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Sweden</span>
         </a>
         <a href="destinations.html#malta" class="dest-pill group">
-          <img src="Malta.svg" alt="Malta" style="animation-delay: 5.0s;"/>
+          <img src="Malta.svg" alt="Malta"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Malta</span>
         </a>
         <a href="destinations.html#europe" class="dest-pill group">
-          <img src="Europe.svg" alt="Europe" style="animation-delay: 5.5s;"/>
+          <img src="Europe.svg" alt="Europe"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Europe & More</span>
         </a>
 
         <!-- Destinations List Set 2 (Seamless Infinite Loop Duplicates) -->
         <a href="destinations.html#australia" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Australia.svg" alt="" style="animation-delay: 0s;"/>
+          <img src="Australia.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Australia</span>
         </a>
         <a href="destinations.html#new-zealand" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="New Zealand.svg" alt="" style="animation-delay: 0.5s;"/>
+          <img src="New Zealand.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">New Zealand</span>
         </a>
         <a href="destinations.html#canada" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Canada.svg" alt="" style="animation-delay: 1.0s;"/>
+          <img src="Canada.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Canada</span>
         </a>
         <a href="destinations.html#uk" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="UK.svg" alt="" style="animation-delay: 1.5s;"/>
+          <img src="UK.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">United Kingdom</span>
         </a>
         <a href="destinations.html#usa" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="USA.svg" alt="" style="animation-delay: 2.0s;"/>
+          <img src="USA.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">United States</span>
         </a>
         <a href="destinations.html#hungary" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Hungary.svg" alt="" style="animation-delay: 2.5s;"/>
+          <img src="Hungary.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Hungary</span>
         </a>
         <a href="destinations.html#france" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="France.svg" alt="" style="animation-delay: 3.0s;"/>
+          <img src="France.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">France</span>
         </a>
         <a href="destinations.html#germany" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Germany.svg" alt="" style="animation-delay: 3.5s;"/>
+          <img src="Germany.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Germany</span>
         </a>
         <a href="destinations.html#finland" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Finland.svg" alt="" style="animation-delay: 4.0s;"/>
+          <img src="Finland.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Finland</span>
         </a>
         <a href="destinations.html#sweden" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Sweden.svg" alt="" style="animation-delay: 4.5s;"/>
+          <img src="Sweden.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Sweden</span>
         </a>
         <a href="destinations.html#malta" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Malta.svg" alt="" style="animation-delay: 5.0s;"/>
+          <img src="Malta.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Malta</span>
         </a>
         <a href="destinations.html#europe" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Europe.svg" alt="" style="animation-delay: 5.5s;"/>
+          <img src="Europe.svg" alt=""/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Europe & More</span>
         </a>
       </div>
@@ -1085,7 +1071,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8">
 
       <!-- Service 1 -->
-      <div class="flex flex-col gap-6 group animate-fade-up" style="animation-delay: 0.1s;">
+      <div class="flex flex-col gap-6 group animate-fade-up">
         <div class="p-3 rounded-lg bg-brand-blue/10 border border-brand-blue/15 text-brand-blue w-fit">
           <span class="material-symbols-outlined text-2xl md:text-3xl">school</span>
         </div>
@@ -1114,7 +1100,7 @@
       </div>
 
       <!-- Service 2 -->
-      <div class="flex flex-col gap-6 group animate-fade-up" style="animation-delay: 0.2s;">
+      <div class="flex flex-col gap-6 group animate-fade-up">
         <div class="p-3 rounded-lg bg-brand-green/10 border border-brand-green/15 text-brand-green w-fit">
           <span class="material-symbols-outlined text-2xl md:text-3xl">flight_takeoff</span>
         </div>
@@ -1143,7 +1129,7 @@
       </div>
 
       <!-- Service 3 -->
-      <div class="flex flex-col gap-6 group animate-fade-up" style="animation-delay: 0.3s;">
+      <div class="flex flex-col gap-6 group animate-fade-up">
         <div class="p-3 rounded-lg bg-primary/10 border border-primary/15 text-primary w-fit">
           <span class="material-symbols-outlined text-2xl md:text-3xl">support_agent</span>
         </div>
@@ -1172,7 +1158,7 @@
       </div>
 
       <!-- Service 4 -->
-      <div class="flex flex-col gap-6 group animate-fade-up" style="animation-delay: 0.4s;">
+      <div class="flex flex-col gap-6 group animate-fade-up">
         <div class="p-3 rounded-lg bg-amber-500/10 border border-amber-500/15 text-amber-500 w-fit">
           <span class="material-symbols-outlined text-2xl md:text-3xl">luggage</span>
         </div>
@@ -1201,7 +1187,7 @@
       </div>
 
       <!-- Service 5 -->
-      <div class="flex flex-col gap-6 group animate-fade-up" style="animation-delay: 0.5s;">
+      <div class="flex flex-col gap-6 group animate-fade-up">
         <div class="p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/15 text-emerald-500 w-fit">
           <span class="material-symbols-outlined text-2xl md:text-3xl">home_pin</span>
         </div>
@@ -1263,7 +1249,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Rafiqul Islam</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Australia.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Australia.svg" alt="Australia flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Australia</span>
                 </div>
               </div>
@@ -1289,7 +1275,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Sadia Akter</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Canada.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Canada.svg" alt="Canada flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Canada</span>
                 </div>
               </div>
@@ -1315,7 +1301,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Tariqul Anam</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Australia.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Australia.svg" alt="Australia flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Australia</span>
                 </div>
               </div>
@@ -1341,7 +1327,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Farhana Yasmin</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Canada.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Canada.svg" alt="Canada flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Canada</span>
                 </div>
               </div>
@@ -1367,7 +1353,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Tanvir Ahmed</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="UK.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="UK.svg" alt="UK flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">United Kingdom</span>
                 </div>
               </div>
@@ -1393,7 +1379,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Naila Chowdhury</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="USA.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="USA.svg" alt="USA flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">USA</span>
                 </div>
               </div>
@@ -1419,7 +1405,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Imtiaz Ahmed</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Sweden.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Sweden.svg" alt="Sweden flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Sweden</span>
                 </div>
               </div>
@@ -1722,7 +1708,7 @@
       </div>
 
       <!-- Right Column: Mission, Vision, Values (7 Cols) -->
-      <div class="lg:col-span-7 flex flex-col gap-6 md:gap-8 animate-fade-up" style="animation-delay: 0.2s;">
+      <div class="lg:col-span-7 flex flex-col gap-6 md:gap-8 animate-fade-up">
 
         <!-- Mission Card -->
         <div class="rounded-[2rem] p-8 md:p-10 border border-outline-variant/10 bg-surface/40 backdrop-blur-md flex flex-col group">
@@ -1842,7 +1828,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-stretch">
 
       <!-- Left: Embedded Student Registration Google Form (7 Columns) -->
-      <div class="lg:col-span-7 flex animate-fade-up" style="animation-delay: 0.1s;">
+      <div class="lg:col-span-7 flex animate-fade-up">
         <div class="rounded-[2rem] border border-outline-variant/10 bg-surface/40 backdrop-blur-md w-full flex flex-col overflow-hidden" id="form-card">
           <!-- Minimal Header -->
           <div class="px-8 md:px-10 pt-7 pb-5 border-b border-outline-variant/10 select-none shrink-0">
@@ -1863,7 +1849,7 @@
       </div>
 
       <!-- Right: Office Contact Info & Google Map (5 Columns) -->
-      <div class="lg:col-span-5 flex flex-col gap-6 animate-fade-up" style="animation-delay: 0.2s;">
+      <div class="lg:col-span-5 flex flex-col gap-6 animate-fade-up">
 
         <!-- Contact Details Card -->
         <div class="rounded-[2rem] p-8 md:p-10 border border-outline-variant/10 bg-surface/40 backdrop-blur-md flex flex-col">
@@ -2083,25 +2069,31 @@
   }, { threshold: 0.15 });
   document.querySelectorAll('.stat-number[data-target]').forEach(el => counterObserver.observe(el));
 
-  // ─── Nav scroll shadow (throttled & corrected class replace) ──
+  // ─── Nav scroll shadow (throttled, corrected, & runs on load) ──
   const nav = document.getElementById('mainNav');
   if (nav) {
+    function handleNavScroll() {
+      if (window.scrollY > 50) {
+        nav.classList.add('shadow-md');
+        nav.classList.replace('bg-surface/20', 'bg-surface/85');
+      } else {
+        nav.classList.remove('shadow-md');
+        nav.classList.replace('bg-surface/85', 'bg-surface/20');
+      }
+    }
     let navTicking = false;
     window.addEventListener('scroll', () => {
       if (!navTicking) {
         window.requestAnimationFrame(() => {
-          if (window.scrollY > 50) {
-            nav.classList.add('shadow-md');
-            nav.classList.replace('bg-surface/20', 'bg-surface/85');
-          } else {
-            nav.classList.remove('shadow-md');
-            nav.classList.replace('bg-surface/85', 'bg-surface/20');
-          }
+          handleNavScroll();
           navTicking = false;
         });
         navTicking = true;
       }
     }, { passive: true });
+    // Run immediately and on load to prevent flash on scrolled refreshes
+    window.addEventListener('load', handleNavScroll, { passive: true });
+    handleNavScroll();
   }
 
   // ─── Fullscreen menu ───────────────────────────────────────
@@ -2126,16 +2118,70 @@
     }
   });
 
-  // ─── Active nav link ───────────────────────────────────────
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  const pageMap = { 'code.html': 'index.html', '': 'index.html' };
-  const mappedPage = pageMap[currentPage] || currentPage;
-  document.querySelectorAll('.menu-link[href]').forEach(link => {
-    if (link.getAttribute('href') === mappedPage) {
-      link.classList.add('text-primary');
-      link.setAttribute('aria-current', 'page');
+  // ─── Synchronized Hero Flipper & Flag Slider (Anti-Drift Engine) ────────────────────
+  const heroFlipper = document.getElementById('hero-flipper');
+  const heroFlags = document.querySelectorAll('.hero-flag');
+  const flipperWords = document.querySelectorAll('.flipper-word');
+  
+  if (heroFlipper && heroFlags.length > 0) {
+    let heroIndex = 0;
+    const totalHeroItems = 12; // 12 countries
+    const slideDuration = 3000; // 3 seconds per slide
+
+    // Remove legacy CSS animation and set initial transform state
+    heroFlipper.style.animation = 'none';
+    heroFlipper.style.transition = 'transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1)';
+    heroFlipper.style.transform = 'translateY(0)';
+
+    // Ensure only the first flag is active initially
+    heroFlags.forEach((flag, idx) => {
+      if (idx === 0) {
+        flag.classList.add('active');
+        flag.classList.remove('outgoing');
+      } else {
+        flag.classList.remove('active', 'outgoing');
+      }
+    });
+
+    function nextHeroSlide() {
+      const prevIndex = heroIndex;
+      const nextIndex = (heroIndex + 1) % (totalHeroItems + 1); // 13 states including duplicate Australia
+
+      // 1. Move flipper vertically (1.2em height per word)
+      heroFlipper.style.transition = 'transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1)';
+      heroFlipper.style.transform = `translateY(${-nextIndex * 1.2}em)`;
+
+      // Map nextIndex to flag array indices (wrap duplicate 12 back to flag 0)
+      const activeFlagIndex = nextIndex % totalHeroItems;
+
+      // 2. Animate incoming/outgoing flags via hardware-accelerated classes
+      heroFlags.forEach((flag, idx) => {
+        if (idx === activeFlagIndex) {
+          flag.classList.remove('outgoing');
+          flag.classList.add('active');
+        } else if (idx === (prevIndex % totalHeroItems)) {
+          flag.classList.remove('active');
+          flag.classList.add('outgoing');
+        } else {
+          flag.classList.remove('active', 'outgoing');
+        }
+      });
+
+      heroIndex = nextIndex;
+
+      // 3. Seamless wrap reset when reaching the duplicate word
+      if (nextIndex === totalHeroItems) {
+        setTimeout(() => {
+          heroFlipper.style.transition = 'none';
+          heroFlipper.style.transform = 'translateY(0)';
+          heroIndex = 0;
+        }, 850); // Fires just as transition finishes (0.8s)
+      }
     }
-  });
+
+    // Set interval for continuous synchronized breathing transitions
+    setInterval(nextHeroSlide, slideDuration);
+  }
 
   // ─── Scroll depth tracking (GA4) ──────────────────────────
   if (typeof gtag !== 'undefined') {
@@ -2181,48 +2227,7 @@
     });
   });
 
-  // Handle Form Submission
-  const form = document.getElementById('consultationForm');
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const formData = new FormData(form);
-      const submitButton = form.querySelector('button[type="submit"]');
-      submitButton.disabled = true;
-      submitButton.innerHTML = `<span class="material-symbols-outlined animate-spin text-xl mr-2">sync</span> Submitting...`;
-
-      fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      .then(response => {
-        // Hide form fields
-        form.classList.add('hidden');
-
-        // Show Success
-        const successArea = document.getElementById('formSuccess');
-        successArea.classList.remove('hidden');
-
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'generate_lead', {
-            'event_category': 'Engagement',
-            'event_label': 'Consultation Lead'
-          });
-        }
-      })
-      .catch(error => {
-        alert("Oops! There was a problem submitting your form. Please try again.");
-        submitButton.disabled = false;
-        submitButton.innerHTML = `Submit Request <span class="material-symbols-outlined text-xl">check</span>`;
-      });
-    });
-  }
-
-  // ─── Scrollspy for Desktop Navigation ──────────────────────
+  // ─── Scrollspy for Navigation (Dynamic Desktop & Mobile Overlay) ────────────────
   const navLinks = document.querySelectorAll('.nav-desktop-link');
   const sections = document.querySelectorAll('section[id]');
   let cachedSections = [];
@@ -2257,6 +2262,7 @@
           currentSectionId = cachedSections[cachedSections.length - 1]?.id || currentSectionId;
         }
 
+        // Highlight desktop links
         navLinks.forEach(link => {
           if (link.getAttribute('href') === `#${currentSectionId}`) {
             link.classList.add('active-nav-link');
@@ -2264,6 +2270,18 @@
             link.classList.remove('active-nav-link');
           }
         });
+
+        // Highlight mobile fullscreen menu links
+        menuLinks.forEach(link => {
+          if (link.getAttribute('href') === `#${currentSectionId}`) {
+            link.classList.add('text-primary');
+            link.setAttribute('aria-current', 'page');
+          } else {
+            link.classList.remove('text-primary');
+            link.removeAttribute('aria-current');
+          }
+        });
+
         scrollspyTicking = false;
       });
       scrollspyTicking = true;
@@ -2324,7 +2342,7 @@
       targetX = targetXState - walk;
     });
 
-    // Touch support (Mobile) with same premium inertia
+    // Touch support (Mobile) with premium inertia
     marqueeOuter.addEventListener('touchstart', (e) => {
       isDown = true;
       autoScrollActive = false;
@@ -2370,6 +2388,112 @@
 
       // Apply transform using hardware-accelerated translate3d
       marqueeTrack.style.transform = `translate3d(${-currentX}px, 0, 0)`;
+
+      requestAnimationFrame(autoScrollStep);
+    }
+    requestAnimationFrame(autoScrollStep);
+  }
+
+  // ─── Testimonials Marquee Inertia-based Drag-to-Scroll & Auto-Play ───────────────────
+  const testMarqueeOuter = document.querySelector('.testimonial-marquee-outer');
+  const testMarqueeTrack = document.querySelector('.testimonial-marquee-track');
+  if (testMarqueeOuter && testMarqueeTrack) {
+    let isDown = false;
+    let startX;
+    let targetXState;
+    let isHovered = false;
+    let autoScrollActive = true;
+    const scrollSpeed = 0.5; // Slightly slower speed for readable text scrolling
+
+    let currentX = 0;
+    let targetX = 0;
+    const ease = 0.08; // Inertia smoothing coefficient
+
+    // Cache marquee dimensional values
+    let halfWidth = testMarqueeTrack.scrollWidth / 2;
+    function cacheTestMarqueeDimensions() {
+      halfWidth = testMarqueeTrack.scrollWidth / 2;
+    }
+    window.addEventListener('resize', cacheTestMarqueeDimensions, { passive: true });
+    window.addEventListener('load', cacheTestMarqueeDimensions, { passive: true });
+    cacheTestMarqueeDimensions();
+
+    // Handle Drag on Desktop (Mouse)
+    testMarqueeOuter.addEventListener('mousedown', (e) => {
+      isDown = true;
+      autoScrollActive = false;
+      testMarqueeOuter.classList.add('active');
+      startX = e.pageX;
+      targetXState = targetX;
+    });
+
+    testMarqueeOuter.addEventListener('mouseleave', () => {
+      isDown = false;
+      isHovered = false;
+      testMarqueeOuter.classList.remove('active');
+      setTimeout(() => { if (!isDown && !isHovered) autoScrollActive = true; }, 1000);
+    });
+
+    testMarqueeOuter.addEventListener('mouseup', () => {
+      isDown = false;
+      testMarqueeOuter.classList.remove('active');
+      setTimeout(() => { if (!isDown && !isHovered) autoScrollActive = true; }, 1000);
+    });
+
+    testMarqueeOuter.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX;
+      const walk = (x - startX) * 1.5; // Drag sensitivity
+      targetX = targetXState - walk;
+    });
+
+    // Touch support (Mobile) with premium inertia
+    testMarqueeOuter.addEventListener('touchstart', (e) => {
+      isDown = true;
+      autoScrollActive = false;
+      startX = e.touches[0].pageX;
+      targetXState = targetX;
+    }, { passive: true });
+
+    testMarqueeOuter.addEventListener('touchmove', (e) => {
+      if (!isDown) return;
+      const x = e.touches[0].pageX;
+      const walk = (x - startX) * 1.5;
+      targetX = targetXState - walk;
+    }, { passive: true });
+
+    testMarqueeOuter.addEventListener('touchend', () => {
+      isDown = false;
+      setTimeout(() => { if (!isHovered) autoScrollActive = true; }, 1500);
+    }, { passive: true });
+
+    // Hover pauses auto-scroll
+    testMarqueeOuter.addEventListener('mouseenter', () => {
+      isHovered = true;
+      autoScrollActive = false;
+    });
+
+    // requestAnimationFrame Loop for ultra-smooth inertia rendering (sub-pixel precision transform)
+    function autoScrollStep() {
+      if (autoScrollActive) {
+        targetX += scrollSpeed;
+      }
+
+      // Linear interpolation (lerp) for buttery inertia
+      currentX += (targetX - currentX) * ease;
+
+      // Handle seamless infinite wrap
+      if (currentX >= halfWidth) {
+        currentX -= halfWidth;
+        targetX -= halfWidth;
+      } else if (currentX < 0) {
+        currentX += halfWidth;
+        targetX += halfWidth;
+      }
+
+      // Apply transform using hardware-accelerated translate3d
+      testMarqueeTrack.style.transform = `translate3d(${-currentX}px, 0, 0)`;
 
       requestAnimationFrame(autoScrollStep);
     }

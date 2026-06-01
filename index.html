@@ -11,6 +11,10 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
   <link rel="canonical" href="https://www.emigrationaid.com/"/>
 
+  <!-- LLM Discovery -->
+  <link rel="alternate" type="text/plain" href="https://www.emigrationaid.com/llms.txt" title="LLM Site Index"/>
+  <link rel="alternate" type="text/plain" href="https://www.emigrationaid.com/llms-full.txt" title="LLM Full Content"/>
+
   <!-- Open Graph -->
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Emigration Aid — Top Visa & Education Consultancy in Dhaka"/>
@@ -42,10 +46,10 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
   <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/></noscript>
 
-  <!-- Tailwind CSS -->
+    <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script id="tailwind-config">
-    tailwind.config = {
+    tailwind.config = { content: ['./*.html'], 
       darkMode: "class",
       theme: {
         extend: {
@@ -136,8 +140,10 @@
           }
         }
       }
-    }
+    };
   </script>
+  
+  
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -220,8 +226,79 @@
           "@type": "Answer",
           "text": "You can book a free, no-obligation session by filling out our online consultation form directly on this website, messaging our counseling team on WhatsApp (+8801769048022), or calling our office directly."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Emigration Aid's visa success rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Over 17 years and 500+ client engagements, Emigration Aid has maintained a high visa approval success rate across all destination countries. Our thorough document preparation, interview coaching, and compliance-first approach ensure that applications are well-prepared before submission."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you help with scholarship applications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our counselors actively identify and match eligible students with scholarships, fee waivers, and funding opportunities at partner universities. We assist with scholarship application essays, financial documentation, and deadline management."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the initial consultation free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We offer a free, no-obligation initial consultation where our experienced counselors evaluate your profile, discuss realistic pathways, and outline a customized plan. You can book online, via WhatsApp, or by calling our office."
+        }
       }
     ]
+  }
+  </script>
+
+  <!-- Organization Schema (GEO — Entity Authority) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Emigration Aid",
+    "alternateName": "Jamal Associates & Emigration Aid",
+    "url": "https://www.emigrationaid.com",
+    "logo": "https://www.emigrationaid.com/logo.png",
+    "description": "Expert visa and education consultancy in Dhaka, Bangladesh with 17+ years of experience and 500+ successful placements across 20+ countries.",
+    "foundingDate": "2009-09-01",
+    "founder": {
+      "@type": "Person",
+      "name": "Khan Abu Rawshan Md Mostofa Jamal",
+      "jobTitle": "Chief Executive"
+    },
+    "knowsAbout": [
+      "Student visa applications",
+      "Study abroad consulting",
+      "Skilled immigration pathways",
+      "Express Entry profiling",
+      "University placement services",
+      "Australia student visa subclass 500",
+      "Canada Express Entry",
+      "UK Skilled Worker visa",
+      "Pre-departure briefings",
+      "Post-arrival assistance",
+      "Scholarship matching",
+      "Credential assessment",
+      "Immigration consulting in Bangladesh"
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Bangladesh"
+    },
+    "sameAs": [
+      "https://www.facebook.com/emigrationaid"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+8801769048022",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Bengali"]
+    }
   }
   </script>
 
@@ -844,6 +921,33 @@
      ══════════════════════════════════════════════════════════ -->
 <main id="main-content">
 
+<!-- LLM-Readable Content Summary (visually hidden, present in raw HTML for AI crawlers) -->
+<article data-nosnippet style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;" aria-hidden="true">
+  <h2>About Emigration Aid</h2>
+  <p>Emigration Aid (legally Jamal Associates &amp; Emigration Aid) is an expert visa and education consultancy headquartered in Dhaka, Bangladesh. Founded in September 2009 by Khan Abu Rawshan Md Mostofa Jamal, the firm has 17+ years of experience, 500+ successful student and professional placements, and partnerships across 20+ destination countries including Australia, New Zealand, Canada, the United Kingdom, the United States, Hungary, France, Germany, Finland, Sweden, Malta, and other European nations.</p>
+
+  <h3>Services</h3>
+  <ul>
+    <li>Student Recruitment &amp; Placement — University selection, course matching, application filing, and student visa preparation for 20+ countries.</li>
+    <li>Skilled Immigration — Permanent residency pathway mapping, credential assessment (ECA), Express Entry profiling, and job placement assistance.</li>
+    <li>One-on-One Counseling — Personalized sessions covering career goals, scholarship matching, financial auditing, and visa roadmaps.</li>
+    <li>Pre-Departure Briefings — Flight orientation, health coverage setup, international banking, and safety guidelines.</li>
+    <li>Post-Arrival Assistance — Airport pickup coordination, housing shortlists, and part-time job mentoring.</li>
+  </ul>
+
+  <h3>Key Statistics</h3>
+  <ul>
+    <li>17+ years of immigration consulting experience (founded 2009)</li>
+    <li>500+ students and professionals successfully placed</li>
+    <li>20+ destination countries served</li>
+    <li>14 university and institutional partners</li>
+  </ul>
+
+  <h3>Contact Information</h3>
+  <p>Address: Suite A4, Toma Angelica, 280/1-281/1 North Shahjahanpur, Dhaka 1217, Bangladesh. Phone: +8801769048022, +8801715866866. Email: emigrationaid@gmail.com. Hours: Saturday–Thursday 9:00 AM – 6:00 PM (BST, UTC+6), Friday closed. Website: https://www.emigrationaid.com</p>
+</article>
+
+
 <!-- ── HERO ─────────────────────────────────────────────────── -->
 <section class="relative pb-24 md:pb-48 overflow-hidden pt-24 md:pt-32" id="home">
   <div class="absolute inset-0 pattern-grid opacity-20"></div>
@@ -879,18 +983,18 @@
 
       <div class="animate-fade-up is-visible w-full">
         <div class="flag-wrapper relative h-64 md:h-[500px] w-full max-w-2xl mx-auto lg:mx-0 overflow-hidden rounded-3xl flex items-center justify-center">
-          <div class="hero-flag active"><img alt="Australia" class="w-full h-full object-contain" src="Australia.svg"/></div>
-          <div class="hero-flag"><img alt="New Zealand" class="w-full h-full object-contain" src="New Zealand.svg"/></div>
-          <div class="hero-flag"><img alt="Canada" class="w-full h-full object-contain" src="Canada.svg"/></div>
-          <div class="hero-flag"><img alt="UK" class="w-full h-full object-contain" src="UK.svg"/></div>
-          <div class="hero-flag"><img alt="USA" class="w-full h-full object-contain" src="USA.svg"/></div>
-          <div class="hero-flag"><img alt="Hungary" class="w-full h-full object-contain" src="Hungary.svg"/></div>
-          <div class="hero-flag"><img alt="France" class="w-full h-full object-contain" src="France.svg"/></div>
-          <div class="hero-flag"><img alt="Germany" class="w-full h-full object-contain" src="Germany.svg"/></div>
-          <div class="hero-flag"><img alt="Finland" class="w-full h-full object-contain" src="Finland.svg"/></div>
-          <div class="hero-flag"><img alt="Sweden" class="w-full h-full object-contain" src="Sweden.svg"/></div>
-          <div class="hero-flag"><img alt="Malta" class="w-full h-full object-contain" src="Malta.svg"/></div>
-          <div class="hero-flag"><img alt="Europe" class="w-full h-full object-contain" src="Europe.svg"/></div>
+          <div class="hero-flag active"><img alt="Australia flag — study abroad and visa destination by Emigration Aid" class="w-full h-full object-contain" src="Australia.svg"/></div>
+          <div class="hero-flag"><img alt="New Zealand flag — immigration and visa destination by Emigration Aid" class="w-full h-full object-contain" src="New Zealand.svg"/></div>
+          <div class="hero-flag"><img alt="Canada flag — study abroad and visa destination by Emigration Aid" class="w-full h-full object-contain" src="Canada.svg"/></div>
+          <div class="hero-flag"><img alt="United Kingdom flag — UK visa and study destination by Emigration Aid" class="w-full h-full object-contain" src="UK.svg"/></div>
+          <div class="hero-flag"><img alt="USA flag — study and immigration destination by Emigration Aid" class="w-full h-full object-contain" src="USA.svg"/></div>
+          <div class="hero-flag"><img alt="Hungary flag — European study visa destination by Emigration Aid" class="w-full h-full object-contain" src="Hungary.svg"/></div>
+          <div class="hero-flag"><img alt="France flag — study abroad visa destination by Emigration Aid" class="w-full h-full object-contain" src="France.svg"/></div>
+          <div class="hero-flag"><img alt="Germany flag — study and immigration destination by Emigration Aid" class="w-full h-full object-contain" src="Germany.svg"/></div>
+          <div class="hero-flag"><img alt="Finland flag — European study visa destination by Emigration Aid" class="w-full h-full object-contain" src="Finland.svg"/></div>
+          <div class="hero-flag"><img alt="Sweden flag — study abroad visa destination by Emigration Aid" class="w-full h-full object-contain" src="Sweden.svg"/></div>
+          <div class="hero-flag"><img alt="Malta flag — European immigration destination by Emigration Aid" class="w-full h-full object-contain" src="Malta.svg"/></div>
+          <div class="hero-flag"><img alt="Europe flag — visa and immigration destinations by Emigration Aid" class="w-full h-full object-contain" src="Europe.svg"/></div>
         </div>
       </div>
     </div>
@@ -988,7 +1092,7 @@
   <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
     <div class="text-center mb-12 md:mb-20 animate-fade-up">
       <span class="inline-block mb-4 px-5 py-2 rounded-full bg-primary/10 text-primary text-label-md tracking-widest uppercase">Explore</span>
-      <h2 class="text-4xl md:text-6xl lg:text-8xl text-on-surface mb-6 md:mb-8 font-black tracking-tight">Where Will You Go?</h2>
+      <h2 class="text-4xl md:text-6xl lg:text-8xl text-on-surface mb-6 md:mb-8 font-black tracking-tight">Where Will Your Visa Take You?</h2>
       <p class="text-on-surface-variant text-xl md:text-2xl max-w-3xl mx-auto font-medium">Discover your perfect study destination across 20+ countries worldwide.</p>
     </div>
 
@@ -996,101 +1100,101 @@
       <div class="marquee-track gap-6 md:gap-10">
         <!-- Destinations List Set 1 -->
         <a href="destinations.html#australia" class="dest-pill group">
-          <img src="Australia.svg" alt="Australia"/>
+          <img src="Australia.svg" alt="Australia flag — visa and study abroad destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Australia</span>
         </a>
         <a href="destinations.html#new-zealand" class="dest-pill group">
-          <img src="New Zealand.svg" alt="New Zealand"/>
+          <img src="New Zealand.svg" alt="New Zealand flag — immigration and study destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">New Zealand</span>
         </a>
         <a href="destinations.html#canada" class="dest-pill group">
-          <img src="Canada.svg" alt="Canada"/>
+          <img src="Canada.svg" alt="Canada flag — visa and immigration destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Canada</span>
         </a>
         <a href="destinations.html#uk" class="dest-pill group">
-          <img src="UK.svg" alt="United Kingdom"/>
+          <img src="UK.svg" alt="United Kingdom flag — UK visa and study abroad destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">United Kingdom</span>
         </a>
         <a href="destinations.html#usa" class="dest-pill group">
-          <img src="USA.svg" alt="United States"/>
+          <img src="USA.svg" alt="United States flag — USA visa and study destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">United States</span>
         </a>
         <a href="destinations.html#hungary" class="dest-pill group">
-          <img src="Hungary.svg" alt="Hungary"/>
+          <img src="Hungary.svg" alt="Hungary flag — European study visa destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Hungary</span>
         </a>
         <a href="destinations.html#france" class="dest-pill group">
-          <img src="France.svg" alt="France"/>
+          <img src="France.svg" alt="France flag — study abroad visa destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">France</span>
         </a>
         <a href="destinations.html#germany" class="dest-pill group">
-          <img src="Germany.svg" alt="Germany"/>
+          <img src="Germany.svg" alt="Germany flag — immigration and study destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Germany</span>
         </a>
         <a href="destinations.html#finland" class="dest-pill group">
-          <img src="Finland.svg" alt="Finland"/>
+          <img src="Finland.svg" alt="Finland flag — European study visa destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Finland</span>
         </a>
         <a href="destinations.html#sweden" class="dest-pill group">
-          <img src="Sweden.svg" alt="Sweden"/>
+          <img src="Sweden.svg" alt="Sweden flag — study abroad visa destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Sweden</span>
         </a>
         <a href="destinations.html#malta" class="dest-pill group">
-          <img src="Malta.svg" alt="Malta"/>
+          <img src="Malta.svg" alt="Malta flag — European immigration destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Malta</span>
         </a>
         <a href="destinations.html#europe" class="dest-pill group">
-          <img src="Europe.svg" alt="Europe"/>
+          <img src="Europe.svg" alt="Europe flag — visa and immigration destinations"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Europe & More</span>
         </a>
 
         <!-- Destinations List Set 2 (Seamless Infinite Loop Duplicates) -->
         <a href="destinations.html#australia" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Australia.svg" alt=""/>
+          <img src="Australia.svg" alt="Australia flag — visa destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Australia</span>
         </a>
         <a href="destinations.html#new-zealand" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="New Zealand.svg" alt=""/>
+          <img src="New Zealand.svg" alt="New Zealand flag — study destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">New Zealand</span>
         </a>
         <a href="destinations.html#canada" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Canada.svg" alt=""/>
+          <img src="Canada.svg" alt="Canada flag — immigration destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Canada</span>
         </a>
         <a href="destinations.html#uk" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="UK.svg" alt=""/>
+          <img src="UK.svg" alt="United Kingdom flag — UK visa destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">United Kingdom</span>
         </a>
         <a href="destinations.html#usa" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="USA.svg" alt=""/>
+          <img src="USA.svg" alt="United States flag — USA visa destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">United States</span>
         </a>
         <a href="destinations.html#hungary" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Hungary.svg" alt=""/>
+          <img src="Hungary.svg" alt="Hungary flag — European visa destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Hungary</span>
         </a>
         <a href="destinations.html#france" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="France.svg" alt=""/>
+          <img src="France.svg" alt="France flag — study abroad destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">France</span>
         </a>
         <a href="destinations.html#germany" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Germany.svg" alt=""/>
+          <img src="Germany.svg" alt="Germany flag — immigration destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Germany</span>
         </a>
         <a href="destinations.html#finland" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Finland.svg" alt=""/>
+          <img src="Finland.svg" alt="Finland flag — European study destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Finland</span>
         </a>
         <a href="destinations.html#sweden" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Sweden.svg" alt=""/>
+          <img src="Sweden.svg" alt="Sweden flag — study visa destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Sweden</span>
         </a>
         <a href="destinations.html#malta" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Malta.svg" alt=""/>
+          <img src="Malta.svg" alt="Malta flag — European immigration destination"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Malta</span>
         </a>
         <a href="destinations.html#europe" aria-hidden="true" tabindex="-1" class="dest-pill group">
-          <img src="Europe.svg" alt=""/>
+          <img src="Europe.svg" alt="Europe flag — visa and immigration destinations"/>
           <span class="text-on-surface font-bold text-xl md:text-3xl group-hover:text-primary transition-colors">Europe & More</span>
         </a>
       </div>
@@ -1112,7 +1216,7 @@
     <!-- Section Header (Editorial Style) -->
     <div class="mb-16 md:mb-20 animate-fade-up">
       <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight leading-none text-on-surface mb-8 md:mb-12">
-        <span class="font-normal">Our</span><span class="font-bold text-primary"> Services</span>
+        <span class="font-normal">Our Visa &</span><span class="font-bold text-primary"> Immigration Services</span>
       </h2>
       <p class="text-on-surface-variant text-base md:text-lg font-normal max-w-2xl leading-relaxed">From initial profile evaluation to settling into your new home — we guide you at every milestone.</p>
     </div>
@@ -1285,7 +1389,7 @@
   <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
 
     <div class="text-center mb-16 md:mb-28 animate-fade-up">
-      <h2 class="text-4xl md:text-6xl lg:text-8xl text-on-surface mb-6 md:mb-8 font-normal tracking-tight">What Our Students Say</h2>
+      <h2 class="text-4xl md:text-6xl lg:text-8xl text-on-surface mb-6 md:mb-8 font-normal tracking-tight">What Our Students Say About Emigration Aid</h2>
       <p class="text-on-surface-variant text-xl md:text-2xl max-w-3xl mx-auto font-medium">Real students. Real results. Real lives changed.</p>
     </div>
 
@@ -1485,7 +1589,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Rafiqul Islam</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Australia.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Australia.svg" alt="Australia flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Australia</span>
                 </div>
               </div>
@@ -1511,7 +1615,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Sadia Akter</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Canada.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Canada.svg" alt="Canada flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Canada</span>
                 </div>
               </div>
@@ -1537,7 +1641,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Tariqul Anam</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Australia.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Australia.svg" alt="Australia flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Australia</span>
                 </div>
               </div>
@@ -1563,7 +1667,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Farhana Yasmin</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Canada.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Canada.svg" alt="Canada flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Canada</span>
                 </div>
               </div>
@@ -1589,7 +1693,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Tanvir Ahmed</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="UK.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="UK.svg" alt="UK flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">United Kingdom</span>
                 </div>
               </div>
@@ -1615,7 +1719,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Naila Chowdhury</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="USA.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="USA.svg" alt="USA flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">USA</span>
                 </div>
               </div>
@@ -1641,7 +1745,7 @@
               <div>
                 <p class="text-on-surface font-bold text-sm md:text-base">Imtiaz Ahmed</p>
                 <div class="flex items-center gap-1.5 mt-0.5">
-                  <img src="Sweden.svg" alt="" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
+                  <img src="Sweden.svg" alt="Sweden flag" class="w-4 h-3 object-cover rounded-[2px] shadow-sm"/>
                   <span class="text-on-surface-variant text-xs font-semibold">Sweden</span>
                 </div>
               </div>
@@ -1944,6 +2048,45 @@
         </div>
       </details>
 
+      <!-- FAQ Item 6 -->
+      <details class="group rounded-2xl border border-outline-variant/10 bg-surface/40 backdrop-blur-md p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer focus:outline-none list-none">
+          <h3 class="text-base md:text-lg font-bold text-on-surface tracking-tight pr-4">What is Emigration Aid's visa success rate?</h3>
+          <span class="shrink-0 rounded-full bg-surface-container-high p-1 text-on-surface-variant group-open:-rotate-180 transition-transform duration-300">
+            <span class="material-symbols-outlined text-xl block">expand_more</span>
+          </span>
+        </summary>
+        <div class="mt-4 leading-relaxed text-on-surface-variant text-sm md:text-base font-normal">
+          Over 17 years and 500+ client engagements, Emigration Aid has maintained a high visa approval success rate across all destination countries. Our thorough document preparation, interview coaching, and compliance-first approach ensure that applications are well-prepared before submission.
+        </div>
+      </details>
+
+      <!-- FAQ Item 7 -->
+      <details class="group rounded-2xl border border-outline-variant/10 bg-surface/40 backdrop-blur-md p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer focus:outline-none list-none">
+          <h3 class="text-base md:text-lg font-bold text-on-surface tracking-tight pr-4">Do you help with scholarship applications?</h3>
+          <span class="shrink-0 rounded-full bg-surface-container-high p-1 text-on-surface-variant group-open:-rotate-180 transition-transform duration-300">
+            <span class="material-symbols-outlined text-xl block">expand_more</span>
+          </span>
+        </summary>
+        <div class="mt-4 leading-relaxed text-on-surface-variant text-sm md:text-base font-normal">
+          Yes. Our counselors actively identify and match eligible students with scholarships, fee waivers, and funding opportunities at partner universities. We assist with scholarship application essays, financial documentation, and deadline management.
+        </div>
+      </details>
+
+      <!-- FAQ Item 8 -->
+      <details class="group rounded-2xl border border-outline-variant/10 bg-surface/40 backdrop-blur-md p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+        <summary class="flex items-center justify-between cursor-pointer focus:outline-none list-none">
+          <h3 class="text-base md:text-lg font-bold text-on-surface tracking-tight pr-4">Is the initial consultation free?</h3>
+          <span class="shrink-0 rounded-full bg-surface-container-high p-1 text-on-surface-variant group-open:-rotate-180 transition-transform duration-300">
+            <span class="material-symbols-outlined text-xl block">expand_more</span>
+          </span>
+        </summary>
+        <div class="mt-4 leading-relaxed text-on-surface-variant text-sm md:text-base font-normal">
+          Yes. We offer a free, no-obligation initial consultation where our experienced counselors evaluate your profile, discuss realistic pathways, and outline a customized plan. You can book online, via WhatsApp, or by calling our office.
+        </div>
+      </details>
+
     </div>
   </div>
 </section>
@@ -1959,7 +2102,7 @@
           <span class="text-primary text-[0.7rem] md:text-xs uppercase tracking-[0.25em] font-semibold">GET IN TOUCH</span>
         </div>
         <h2 class="text-4xl md:text-6xl font-light tracking-tight text-on-surface leading-tight select-none">
-          Let's Plan <span class="font-bold text-primary block mt-1">Your Journey.</span>
+          Let's Plan <span class="font-bold text-primary block mt-1">Your Visa Journey.</span>
         </h2>
       </div>
       <div class="max-w-md md:mb-1 shrink-0">
@@ -2047,6 +2190,8 @@
           </iframe>
         </div>
 
+        
+
       </div>
 
     </div>
@@ -2062,7 +2207,7 @@
       <div class="flex-1">
         <h2 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[1.05] text-on-surface select-none">
           <span class="font-light">Ready to begin</span><br>
-          <span class="font-bold text-primary">your journey?</span>
+          <span class="font-bold text-primary">your visa journey?</span>
         </h2>
       </div>
 
